@@ -117,3 +117,57 @@ footer{
 }
 
 /********************media Queries***********************/
+
+/*small screens*/
+@media(max-width:560px){
+  .showcase::after{
+    height: 50vh;
+  }
+
+  .content{
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo{
+    height: 140px;
+    width: 140px;
+  }
+
+  .content .title{
+    font-size: 1.5rem;
+  }
+
+  .content .text{
+    display: none;
+  }
+
+  .grid-3,
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+
+  .services div{
+    border-bottom: 1px dashed #333;
+    padding: 1.2rem 1rem;
+  }
+
+  #lastService{
+    border-bottom: none;
+  }
+
+  .aboutUsText{
+    text-align: center;
+  }
+}
+
+/*Landscape mode*/
+@media(max-height: 500px){
+  .content .title, .content .text{
+    display: none;
+  }
+
+  .content{
+    top: 0;
+  }
+}
